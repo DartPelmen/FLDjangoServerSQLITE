@@ -12,7 +12,7 @@ from FLServerSQLITEDjango.models import Table1
 def getAll(request):
     output = []
     out = models.Table1.objects.filter(id=1).values()
-    return JsonResponse({"data1": out[0]['data1']})
+    return JsonResponse({"data2": out[0]['data2']})
 
 
 @csrf_exempt
