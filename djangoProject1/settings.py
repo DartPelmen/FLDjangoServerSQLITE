@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'djangoProject1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dde0sudma4tlho',
-        'USER': 'jbrndgkasejgkh',
-        'PASSWORD': '36bcfc8f7f1b49b256383df599582246716b25a14a69cb80365efc3aa90adc09',
-        'HOST': 'ec2-44-199-22-207.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'greendb',
+        'USER': 'test',
+        'PASSWORD': 'Parol123-',
+        'HOST': '89.22.239.32',
+        'PORT': '3306',
     }
 }
 
