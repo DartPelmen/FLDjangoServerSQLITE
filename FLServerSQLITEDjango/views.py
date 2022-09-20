@@ -8,7 +8,8 @@ from FLServerSQLITEDjango import models
 from FLServerSQLITEDjango.models import Table1
 
 
-# Create your views here.
+# View: по факту методы, описывающие,
+# что должен получить пользователь при обращении по определенным ссылкам на сайте.
 def getAll(request):
     output = []
     out = models.Table1.objects.filter(id=1).values()

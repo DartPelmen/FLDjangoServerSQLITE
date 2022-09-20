@@ -1,7 +1,9 @@
 from django.db import models
 
 
-# Create your models here.
+# Модель данных: что хранится в БД.
+# Модель не привязана к СУБД.
+# Это дает возможность использовать разные СУБД без переписывания кода.
 class Table1(models.Model):
     id = models.IntegerField(primary_key=True, db_column='id')  # Field name made lowercase.
     data1 = models.CharField(db_column='data1', max_length=255, blank=True, null=True)  # Field name made lowercase.

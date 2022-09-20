@@ -18,6 +18,7 @@ from django.urls import path
 
 from FLServerSQLITEDjango import views
 
+#Какие ссылки доступны в приложении и какие к ним привязаны обработчики
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.getAll),
